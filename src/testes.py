@@ -3,16 +3,16 @@ import sys
 erroInicializar = False
 jogo = jogovelha.inicializar()
 if len(jogo) != 3:
-erroInicializar = True
+  erroInicializar = True
 else:
-for linha in jogo:
-if len(linha) != 3:
-erroInicializar = True
-else:
-for elemento in linha:
-if elemento != '.’:
-erroInicializar = True
+  for linha in jogo:
+    if len(linha) != 3:
+      erroInicializar = True
+    else:
+      for elemento in linha:
+        if elemento != '.â€™:
+          erroInicializar = True
 if erroInicializar:
-sys.exit(1)
+  sys.exit(1)
 else:
-sys.exit(0)
+  sys.exit(0)
